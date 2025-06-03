@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geraldine P. Ferreras - Software Engineer</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<script>tailwind.config={theme:{extend:{colors:{primary:'#2EC4B6',secondary:'#FFD166'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<link rel="stylesheet" href="sleek-portfolio/Sleek-Portfolio.css">
+</head>
+<body class="min-h-screen">
+<!-- Particles Background -->
+<div class="particles" aria-hidden="true"></div>
+<!-- Header -->
+<header class="fixed top-0 left-0 w-full z-50 bg-opacity-80 backdrop-blur-md bg-[#0B0B0F] border-b border-white/5">
+<div class="container mx-auto px-6 py-4 flex justify-between items-center">
+<a href="#" class="text-2xl font-['sans-serif'] text-white">GPF</a>
+<nav class="hidden md:flex space-x-8">
+<a href="#home" class="nav-link text-white/80 hover:text-white transition-colors">Home</a>
+<a href="#projects" class="nav-link text-white/80 hover:text-white transition-colors">Projects</a>
+<a href="#about" class="nav-link text-white/80 hover:text-white transition-colors">About</a>
+<a href="#contact" class="nav-link text-white/80 hover:text-white transition-colors">Contact</a>
+</nav>
+<button class="md:hidden w-10 h-10 flex items-center justify-center text-white" id="menuToggle">
+<i class="ri-menu-line ri-lg"></i>
+</button>
+</div>
+<!-- Mobile Menu -->
+<div id="mobileMenu" class="hidden md:hidden w-full bg-[#0B0B0F] border-b border-white/5">
+<div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+<a href="#home" class="text-white/80 hover:text-white py-2 transition-colors">Home</a>
+<a href="#projects" class="text-white/80 hover:text-white py-2 transition-colors">Projects</a>
+<a href="#about" class="text-white/80 hover:text-white py-2 transition-colors">About</a>
+<a href="#contact" class="text-white/80 hover:text-white py-2 transition-colors">Contact</a>
+</div>
+</div>
+</header>
+<!-- Hero Section -->
+<section id="home" class="min-h-screen w-full flex items-center justify-center relative hero-bg">
+<div class="w-full flex flex-col items-center justify-center text-center px-6 py-20 mt-16">
+<div class="badge px-4 py-1.5 bg-primary/10 border border-primary/20 rounded-full mb-6 inline-flex items-center hero-fade" style="opacity:0;">
+<span class="w-2 h-2 bg-primary rounded-full mr-2"></span>
+<span class="text-sm text-white/90">Open to Work</span>
+</div>
+<h1 class="text-4xl md:text-6xl font-bold mb-4 gradient-text hero-type" data-text="Geraldine P. Ferreras"><span class="typewriter-text"></span><span class="typewriter-cursor">|</span></h1>
+<h2 class="text-3xl md:text-4xl font-semibold mb-6 gradient-text hero-type2" style="opacity:0; height: 2.5em; overflow: hidden; position: relative;">
+  <span class="typewriter-text"></span>
+  <div id="animated-job-titles" style="height:1.2em; overflow:hidden; position:relative; display:inline-block; vertical-align:bottom;">
+    <div class="job-titles-wrapper" style="transition: transform 0.7s cubic-bezier(0.4,0,0.2,1); will-change: transform;">
+      <div class="job-title">Software Engineer</div>
+      <div class="job-title">Data Encoder</div>
+      <div class="job-title">Virtual Assistant</div>
+    </div>
+  </div>
+</h2>
+<p class="text-white/70 max-w-2xl mb-10 text-lg hero-type3" style="opacity:0;">
+  A developer with a passion for utilizing modern technologies and developing solutions that make a difference.
+</p>
+<div class="flex flex-col sm:flex-row gap-4 mb-12 hero-fade" style="opacity:0;">
+<a href="sleek-portfolio/assets/Ferreras, Geraldine P. Resume.pdf" target="_blank" rel="noopener" class="btn-primary bg-primary text-white px-6 py-3 !rounded-button flex items-center justify-center whitespace-nowrap hero-fade-btn">
+<i class="ri-download-line ri-lg mr-2"></i>
+Download CV
+</a>
+<a href="https://www.linkedin.com/in/geraldine-ferreras/" target="_blank" rel="noopener" class="btn-secondary bg-white/5 backdrop-blur-sm border border-white/10 text-white px-6 py-3 !rounded-button flex items-center justify-center whitespace-nowrap hero-fade-btn">
+LinkedIn
+<i class="ri-arrow-right-line ri-lg ml-2"></i>
+</a>
+</div>
+<div class="flex items-center text-white/50 text-sm hero-fade" style="opacity:0;">
+<i class="ri-mail-line ri-lg mr-2"></i>
+<a href="https://mail.google.com/mail/?view=cm&to=ferreras.geraldine@gmail.com" target="_blank" rel="noopener" class="text-white/70 hover:text-primary transition-colors text-sm break-all">ferreras.geraldine@gmail.com</a>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section id="projects" class="py-20 relative section">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+<div>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">Latest Projects with<br>Modern Features</h2>
+</div>
+<div>
+<p class="text-white/70 mb-6">
+Over the past 3+ years, I've worked on a wide range of of
+websites, from basic websites to complex web systems.
+Below are some of my recent projects.
+</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+<!-- Project 1 -->
+<div class="project-card rounded-lg p-6 h-full flex flex-col">
+<div class="mb-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg mb-4">
+<i class="ri-shopping-bag-line ri-lg text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">E-Commerce Platform</h3>
+<p class="text-white/60 mb-4">A full-featured online store with inventory management, payment processing, and customer analytics.</p>
+</div>
+<div class="mt-auto">
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-white/5 rounded-full text-xs">React</span>
+<span class="px-3 py-1 bg-white/5 rounded-full text-xs">Node.js</span>
+<span class="px-3 py-1 bg-white/5 rounded-full text-xs">MongoDB</span>
+</div>
+<a href="#" class="text-primary flex items-center text-sm font-medium hover:underline">
+View Project
+<i class="ri-arrow-right-line ri-lg ml-1"></i>
+</a>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="project-card rounded-lg p-6 h-full flex flex-col">
+<div class="mb-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg mb-4">
+<i class="ri-dashboard-line ri-lg text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">Analytics Dashboard</h3>
+<p class="text-white/60 mb-4">Real-time data visualization platform for business intelligence with customizable widgets and reports.</p>
+</div>
+<div class="mt-auto">
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-white/5 rounded-full text-xs">Vue.js</span>
+<span class="px-3 py-1 bg-white/5 rounded-full text-xs">Laravel</span>
+<span class="px-3 py-1 bg-white/5 rounded-full text-xs">MySQL</span>
+</div>
+<a href="#" class="text-primary flex items-center text-sm font-medium hover:underline">
+View Project
+<i class="ri-arrow-right-line ri-lg ml-1"></i>
+</a>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="project-card rounded-lg p-6 h-full flex flex-col">
+<div class="mb-4">
+<div class="w-12 h-12 flex items-center justify-center bg-primary/10 rounded-lg mb-4">
+<i class="ri-chat-3-line ri-lg text-primary"></i>
+</div>
+<h3 class="text-xl font-semibold mb-2">Messaging Platform</h3>
+<p class="text-white/60 mb-4">Secure real-time messaging application with end-to-end encryption, file sharing, and group chats.</p>
+</div>
+<div class="mt-auto">
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="px-3 py-1 bg-white/5 rounded-full text-xs">React Native</span>
+<span class="px-3 py-1 bg-white/5 rounded-full text-xs">Firebase</span>
+<span class="px-3 py-1 bg-white/5 rounded-full text-xs">WebRTC</span>
+</div>
+<a href="#" class="text-primary flex items-center text-sm font-medium hover:underline">
+View Project
+<i class="ri-arrow-right-line ri-lg ml-1"></i>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Section -->
+<section id="experience" class="py-20 bg-black/30 relative section">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl md:text-4xl font-bold mb-16 text-center">Work Experience</h2>
+<div class="max-w-3xl mx-auto">
+<!-- Timeline Item 1 -->
+<div class="timeline-item flex gap-6 mb-16">
+<div class="flex-shrink-0">
+<div class="w-16 h-16 flex items-center justify-center bg-white/5 rounded-xl border border-white/10">
+<i class="ri-code-box-line ri-2x text-primary"></i>
+</div>
+</div>
+<div>
+<div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+<h3 class="text-xl font-semibold">Software Associate</h3>
+<span class="text-white/50 text-sm">Feb 2025 - May 2025</span>
+</div>
+<h4 class="text-primary mb-3">Tarellia Solutions OPC</h4>
+<p class="text-white/70 mb-4">
+  Assisted in full stack development of a Sales Force App, performed QA testing, and contributed to project
+  documentation and data requirements preparation.
+</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-white/5 rounded-full text-xs">HTML</span>
+<span class="px-3 py-1 bg-white/5 rounded-full text-xs">PHP</span>
+<span class="px-3 py-1 bg-white/5 rounded-full text-xs">JavaScript</span>
+<span class="px-3 py-1 bg-white/5 rounded-full text-xs">CSS</span>
+<span class="px-3 py-1 bg-white/5 rounded-full text-xs">MySQL</span>
+<span class="px-3 py-1 bg-white/5 rounded-full text-xs">Laravel</span>
+<span class="px-3 py-1 bg-white/5 rounded-full text-xs">CodeIgniter</span>
+<span class="px-3 py-1 bg-white/5 rounded-full text-xs">Postman</span>
+<span class="px-3 py-1 bg-white/5 rounded-full text-xs">VsCode</span>
+</div>
+</div>
+</div>
+<!-- Timeline Item 2 -->
+<div class="timeline-item flex gap-6 mb-16">
+<div class="flex-shrink-0">
+<div class="w-16 h-16 flex items-center justify-center bg-white/5 rounded-xl border border-white/10">
+<i class="ri-layout-2-line ri-2x text-primary"></i>
+</div>
+</div>
+<div>
+<div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+<h3 class="text-xl font-semibold">Documentation Analyst</h3>
+<span class="text-white/50 text-sm">Feb 2025 - May 2025</span>
+</div>
+<h4 class="text-primary mb-3">Tarellia Solutions OPC</h4>
+<p class="text-white/70 mb-4">
+  Assisted in preparing and organizing technical documents, data definitions, and system flowcharts. Ensured
+  clarity and accuracy in documenting software features, user requirements, and testing procedures to support
+  development and QA teams.  
+</p>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-white/5 rounded-full text-xs">Microsoft Word</span>
+<span class="px-3 py-1 bg-white/5 rounded-full text-xs">Microsoft Excel</span>
+<span class="px-3 py-1 bg-white/5 rounded-full text-xs">Google Sheets</span>
+<span class="px-3 py-1 bg-white/5 rounded-full text-xs">Navicat</span>
+<span class="px-3 py-1 bg-white/5 rounded-full text-xs">SQL Server</span>
+</div>
+</div>
+</div>
+<!-- Timeline Item 3 -->
+<div class="timeline-item flex gap-6 mb-20">
+  <div class="flex-shrink-0">
+    <div class="w-16 h-16 flex items-center justify-center bg-white/5 rounded-xl border border-white/10">
+      <i class="ri-code-line ri-2x text-primary"></i>
+    </div>
+  </div>
+  <div>
+    <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+      <h3 class="text-xl font-semibold">Quality Assurance</h3>
+      <span class="text-white/50 text-sm">Feb 2025 - May 2025</span>
+    </div>
+    <h4 class="text-primary mb-3">Tarellia Solutions OPC</h4>
+    <p class="text-white/70 mb-4">
+      Conducted user acceptance testing (UAT), identified bugs, and documented steps to reproduce issues.
+      Collaborated with developers to verify fixes and ensure system functionality met user requirements and project
+      standards
+    </p>
+    <div class="flex flex-wrap gap-2">
+      <span class="px-3 py-1 bg-white/5 rounded-full text-xs">Google Sheets</span>
+      <span class="px-3 py-1 bg-white/5 rounded-full text-xs">SQL</span>
+      <span class="px-3 py-1 bg-white/5 rounded-full text-xs">Navicat</span>
+    </div>
+  </div>
+</div>
+<!-- Timeline Item 4 -->
+<div class="timeline-item flex gap-6 mb-16">
+  <div class="flex-shrink-0">
+    <div class="w-16 h-16 flex items-center justify-center bg-white/5 rounded-xl border border-white/10">
+      <i class="ri-database-2-line ri-2x text-primary"></i>
+    </div>
+  </div>
+  <div>
+    <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+      <h3 class="text-xl font-semibold">Data Encoder</h3>
+      <span class="text-white/50 text-sm">2023-2024</span>
+    </div>
+    <h4 class="text-primary mb-3">PESO City Government of San Fernando, Pampanga</h4>
+    <p class="text-white/70 mb-4">
+      Entered and managed data and daily logs for job applicants, job seekers, and mayor's permits.
+    </p>
+    <div class="flex flex-wrap gap-2">
+      <span class="px-3 py-1 bg-white/5 rounded-full text-xs">Data Entry</span>
+      <span class="px-3 py-1 bg-white/5 rounded-full text-xs">Records Management</span>
+      <span class="px-3 py-1 bg-white/5 rounded-full text-xs">San Fernando Pampanga</span>
+    </div>
+  </div>
+</div>
+<!-- Timeline Item 5 -->
+<div class="timeline-item flex gap-6">
+  <div class="flex-shrink-0">
+    <div class="w-16 h-16 flex items-center justify-center bg-white/5 rounded-xl border border-white/10">
+      <i class="ri-archive-drawer-line ri-2x text-primary"></i>
+    </div>
+  </div>
+  <div>
+    <div class="flex flex-wrap justify-between items-start gap-2 mb-2">
+      <h3 class="text-xl font-semibold">Data Encoder</h3>
+      <span class="text-white/50 text-sm">2021-2022</span>
+    </div>
+    <h4 class="text-primary mb-3">Barangay Dolores Office</h4>
+    <p class="text-white/70 mb-4">
+      Digitized and maintained records for over 8,000 registered voters in Dolores, making it faster to find and retrieve information.<br>
+      Created and distributed certificates and barangay clearances.
+    </p>
+    <div class="flex flex-wrap gap-2">
+      <span class="px-3 py-1 bg-white/5 rounded-full text-xs">Data Entry</span>
+      <span class="px-3 py-1 bg-white/5 rounded-full text-xs">Records Digitization</span>
+      <span class="px-3 py-1 bg-white/5 rounded-full text-xs">Barangay Dolores</span>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section id="about" class="py-20 relative section">
+<div class="container mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+<div>
+<div class="bg-gradient-to-br from-primary/20 to-secondary/20 p-1 rounded-2xl mb-8 max-w-md mx-auto lg:mx-0">
+<div class="bg-[#0B0B0F] p-4 rounded-xl">
+<div class="aspect-square rounded-lg overflow-hidden" style="background-image: url('sleek-portfolio/assets/2x2.png'); background-size: cover; background-position: center;"></div>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
+<p class="text-white/70 mb-6">
+  I am a highly efficient and detail-oriented Data Encoder and Software Associate/Web Developer with a strong background in administrative support, software development, and quality assurance. With hands-on experience in both government offices and private tech companies, I have contributed to full-stack web applications, conducted QA testing, and maintained large-scale data records.
+</p>
+<p class="text-white/70 mb-8">
+  My technical skills include PHP, Laravel, HTML, JavaScript, and SQL, along with experience in documentation, user acceptance testing (UAT), and project reporting. I am also skilled in email and tech support, transcription, and translation services—making me versatile across both technical and administrative roles.
+</p>
+<div class="mb-10">
+<h3 class="text-xl font-semibold mb-4">Key Skills</h3>
+<!-- Skill Bars -->
+<div class="space-y-4">
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-sm text-white/80">Data Entry/Data Encoder</span>
+<span class="text-sm text-white/50">90%</span>
+</div>
+<div class="skill-bar">
+<div class="skill-progress" data-width="90%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-sm text-white/80">Software Developer(PHP, Laravel, HTML, CSS, JavaScript, SQL)</span>
+<span class="text-sm text-white/50">85%</span>
+</div>
+<div class="skill-bar">
+<div class="skill-progress" data-width="85%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-sm text-white/80">Quality Assurance</span>
+<span class="text-sm text-white/50">80%</span>
+</div>
+<div class="skill-bar">
+<div class="skill-progress" data-width="80%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-sm text-white/80">Laravel/PHP</span>
+<span class="text-sm text-white/50">75%</span>
+</div>
+<div class="skill-bar">
+<div class="skill-progress" data-width="75%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between mb-1">
+<span class="text-sm text-white/80">UI/UX Design</span>
+<span class="text-sm text-white/50">80%</span>
+</div>
+<div class="skill-bar">
+<div class="skill-progress" data-width="80%"></div>
+</div>
+</div>
+<div>
+  <div class="flex justify-between mb-1">
+  <span class="text-sm text-white/80">Administrative Assistance</span>
+  <span class="text-sm text-white/50">80%</span>
+  </div>
+  <div class="skill-bar">
+  <div class="skill-progress" data-width="80%"></div>
+  </div>
+  </div>
+  <div>
+    <div class="flex justify-between mb-1">
+    <span class="text-sm text-white/80">Technical Support</span>
+    <span class="text-sm text-white/50">80%</span>
+    </div>
+    <div class="skill-bar">
+    <div class="skill-progress" data-width="80%"></div>
+    </div>
+    </div>
+</div>
+</div>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 bg-white/5 rounded-full text-sm">Problem Solver</span>
+<span class="px-4 py-2 bg-white/5 rounded-full text-sm">Team Player</span>
+<span class="px-4 py-2 bg-white/5 rounded-full text-sm">Fast Learner</span>
+<span class="px-4 py-2 bg-white/5 rounded-full text-sm">Detail-Oriented</span>
+<span class="px-4 py-2 bg-white/5 rounded-full text-sm">Creative Thinker</span>
+
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Software Logos Section -->
+<section id="software" class="py-16 relative section">
+  <div class="container mx-auto px-6 flex justify-center items-center">
+    <div class="relative h-36 w-full max-w-3xl overflow-hidden rounded-2xl border-0 shadow-2xl bg-white/10 flex items-center futuristic-glow neon-border">
+      <!-- Animated background gradient -->
+      <div class="absolute inset-0 z-0 bg-gradient-to-r from-primary/10 via-secondary/10 to-primary/10 animate-bg-move"></div>
+      <!-- Gradient overlays for fade effect -->
+      <div class="pointer-events-none absolute left-0 top-0 h-full w-24 z-20" style="background: linear-gradient(to right, #0B0B0F 80%, transparent);"></div>
+      <div class="pointer-events-none absolute right-0 top-0 h-full w-24 z-20" style="background: linear-gradient(to left, #0B0B0F 80%, transparent);"></div>
+      <div id="software-scroll-horizontal" class="absolute top-0 left-0 h-full flex items-center z-10">
+        <ul class="flex items-center space-x-16 px-8 py-4 text-6xl">
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" title="VS Code" class="logo-futuristic wave1" /></li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git" class="logo-futuristic wave2" /></li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" class="logo-futuristic wave1" /></li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" title="Figma" class="logo-futuristic wave2" /></li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL" class="logo-futuristic wave1" /></li>
+          <li><img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Microsoft_Excel_2013-2019_logo.svg" alt="Excel" title="Microsoft Excel" class="logo-futuristic bg-white rounded wave2" /></li>
+          <li><img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Microsoft_Word_2013-2019_logo.svg" alt="Word" title="Microsoft Word" class="logo-futuristic bg-white rounded wave1" /></li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google Drive" title="Google Drive" class="logo-futuristic bg-white rounded wave2" /></li>
+          <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman" title="Postman" class="logo-futuristic wave1" /></li>
+          <li><i class="ri-terminal-window-line text-primary logo-futuristic wave2" title="Terminal"></i></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Software Logos Section -->
+<!-- Contact Section -->
+<section id="contact" class="py-20 relative section overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/10 via-secondary/5 to-transparent"></div>
+<div class="absolute inset-0" style="background: radial-gradient(circle at 50% 50%, rgba(139, 92, 246, 0.05) 0%, rgba(11, 11, 15, 0) 50%);"></div>
+<div class="container mx-auto px-6 relative">
+<div class="max-w-3xl mx-auto text-center mb-16">
+<div class="inline-flex items-center justify-center p-1 bg-white/5 backdrop-blur-sm rounded-full mb-6">
+<span class="px-4 py-1 text-sm text-white/90 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-full">
+Let's Collaborate
+</span>
+</div>
+<h2 class="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">Get In Touch</h2>
+<p class="text-white/70 text-lg max-w-2xl mx-auto leading-relaxed">
+Have a project in mind or want to discuss potential opportunities? I'm always excited to collaborate on innovative projects and bring ideas to life.
+</p>
+</div>
+<div class="max-w-2xl mx-auto relative">
+<div class="absolute -top-12 -left-12 w-24 h-24 bg-primary/20 rounded-full blur-2xl"></div>
+<div class="absolute -bottom-12 -right-12 w-24 h-24 bg-secondary/20 rounded-full blur-2xl"></div>
+<form id="contactForm" class="space-y-8 backdrop-blur-sm bg-white/[0.02] p-8 rounded-2xl border border-white/10 shadow-lg relative">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="group">
+<label for="name" class="block text-sm font-medium text-white/90 mb-2 transition-colors group-focus-within:text-primary">Name</label>
+<div class="relative">
+<i class="ri-user-line absolute left-4 top-1/2 -translate-y-1/2 text-white/30 group-focus-within:text-primary transition-colors"></i>
+<input type="text" id="name" name="name" class="w-full pl-12 pr-4 py-3 bg-white/[0.03] border border-white/10 rounded-xl text-white placeholder:text-white/30 focus:border-primary focus:bg-white/[0.05] transition-all" placeholder="Your name">
+</div>
+</div>
+<div class="group">
+<label for="email" class="block text-sm font-medium text-white/90 mb-2 transition-colors group-focus-within:text-primary">Email</label>
+<div class="relative">
+<i class="ri-mail-line absolute left-4 top-1/2 -translate-y-1/2 text-white/30 group-focus-within:text-primary transition-colors"></i>
+<input type="email" id="email" name="email" class="w-full pl-12 pr-4 py-3 bg-white/[0.03] border border-white/10 rounded-xl text-white placeholder:text-white/30 focus:border-primary focus:bg-white/[0.05] transition-all" placeholder="Your email">
+</div>
+</div>
+</div>
+<div class="group">
+<label for="subject" class="block text-sm font-medium text-white/90 mb-2 transition-colors group-focus-within:text-primary">Subject</label>
+<div class="relative">
+<i class="ri-chat-1-line absolute left-4 top-1/2 -translate-y-1/2 text-white/30 group-focus-within:text-primary transition-colors"></i>
+<input type="text" id="subject" name="subject" class="w-full pl-12 pr-4 py-3 bg-white/[0.03] border border-white/10 rounded-xl text-white placeholder:text-white/30 focus:border-primary focus:bg-white/[0.05] transition-all" placeholder="Subject">
+</div>
+</div>
+<div class="group">
+<label for="message" class="block text-sm font-medium text-white/90 mb-2 transition-colors group-focus-within:text-primary">Message</label>
+<div class="relative">
+<i class="ri-message-3-line absolute left-4 top-4 text-white/30 group-focus-within:text-primary transition-colors"></i>
+<textarea id="message" name="message" rows="5" class="w-full pl-12 pr-4 py-3 bg-white/[0.03] border border-white/10 rounded-xl text-white placeholder:text-white/30 focus:border-primary focus:bg-white/[0.05] transition-all resize-none" placeholder="Your message"></textarea>
+</div>
+</div>
+<div class="text-center">
+<button type="submit" class="send-btn relative bg-gradient-to-r from-primary to-secondary text-white px-10 py-4 !rounded-xl inline-flex items-center justify-center whitespace-nowrap overflow-hidden group hover:scale-105 transition-transform duration-300">
+<span class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+<span class="relative flex items-center">
+Send Message
+<i class="ri-send-plane-line ri-lg ml-2 transform group-hover:translate-x-1 transition-transform"></i>
+</span>
+</button>
+</div>
+</form>
+<div class="mt-20 grid grid-cols-1 md:grid-cols-3 gap-8">
+<a href="https://mail.google.com/mail/?view=cm&to=ferreras.geraldine@gmail.com" target="_blank" rel="noopener" class="group p-6 bg-white/[0.02] backdrop-blur-sm rounded-2xl border border-white/10 hover:border-primary/30 transition-colors duration-300 flex flex-col items-center text-center cursor-pointer">
+  <div class="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl mb-4 transform group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
+    <i class="ri-mail-line ri-xl text-primary"></i>
+  </div>
+  <h3 class="text-lg font-medium mb-2 text-white group-hover:text-primary transition-colors">Email</h3>
+  <span class="text-white/70 text-sm break-all">ferreras.geraldine@gmail.com</span>
+</a>
+<!-- Location Card -->
+<a href="https://maps.app.goo.gl/5VcAJ8UsyEa9455q8" target="_blank" rel="noopener" class="group p-6 bg-white/[0.02] backdrop-blur-sm rounded-2xl border border-white/10 hover:border-primary/30 transition-colors duration-300 flex flex-col items-center text-center cursor-pointer">
+  <div class="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl mb-4 transform group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
+    <i class="ri-map-pin-line ri-xl text-primary"></i>
+  </div>
+  <h3 class="text-lg font-medium mb-2 text-white group-hover:text-primary transition-colors">Location</h3>
+  <span class="text-white/70">San Fernando, Pampanga</span>
+</a>
+<!-- Social Card -->
+<div class="group p-6 bg-white/[0.02] backdrop-blur-sm rounded-2xl border border-white/10 hover:border-primary/30 transition-colors duration-300">
+  <div class="flex flex-col items-center text-center">
+    <div class="w-16 h-16 flex items-center justify-center bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl mb-4 transform group-hover:scale-110 group-hover:rotate-6 transition-transform duration-300">
+      <i class="ri-links-line ri-xl text-primary"></i>
+    </div>
+    <h3 class="text-lg font-medium mb-2 text-white group-hover:text-primary transition-colors">Social</h3>
+    <div class="flex space-x-4 mt-4">
+      <a href="https://www.linkedin.com/in/geraldine-ferreras/" target="_blank" rel="noopener" class="w-12 h-12 flex items-center justify-center bg-white/[0.03] rounded-xl border border-white/10 hover:border-primary/30 hover:bg-primary/10 transform hover:scale-110 transition-all duration-300">
+        <i class="ri-linkedin-fill ri-xl text-white group-hover:text-primary"></i>
+      </a>
+      <a href="https://www.facebook.com/grldnf1" target="_blank" rel="noopener" class="w-12 h-12 flex items-center justify-center bg-white/[0.03] rounded-xl border border-white/10 hover:border-primary/30 hover:bg-primary/10 transform hover:scale-110 transition-all duration-300">
+        <i class="ri-facebook-fill ri-xl text-white group-hover:text-primary"></i>
+      </a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="py-8 border-t border-white/5">
+<div class="container mx-auto px-6 text-center">
+<p class="text-white/50 text-sm">
+© 2025 Geraldine Ferreras. All rights reserved.
+</p>
+</div>
+</footer>
+<!-- Modal for Resume PDF -->
+<div id="resumeModal" class="fixed inset-0 z-50 flex items-center justify-center bg-black/70 backdrop-blur-sm hidden">
+  <div class="bg-[#181F2A] rounded-2xl shadow-2xl max-w-2xl w-full mx-4 p-6 relative flex flex-col items-center">
+    <button id="closeResumeModal" class="absolute top-4 right-4 text-white/70 hover:text-primary text-2xl"><i class="ri-close-line"></i></button>
+    <iframe id="resumeViewer" src="sleek-portfolio/assets/Ferreras, Geraldine P. Resume.pdf" class="w-full h-[70vh] rounded-xl border-0 mb-6 bg-white" style="box-shadow:0 2px 16px #0002;"></iframe>
+    <div class="flex gap-4 justify-center">
+      <a href="sleek-portfolio/assets/Ferreras, Geraldine P. Resume.pdf" download class="btn-primary px-6 py-3 rounded-xl flex items-center"><i class="ri-download-line mr-2"></i>Download PDF</a>
+      <button id="printResume" class="btn-secondary px-6 py-3 rounded-xl flex items-center"><i class="ri-printer-line mr-2"></i>Print</button>
+    </div>
+  </div>
+</div>
+<!-- Email Sent Modal -->
+<div id="emailSentModal" class="fixed inset-0 z-50 items-center justify-center bg-black/70 backdrop-blur-sm hidden">
+  <div class="bg-[#181F2A] rounded-2xl shadow-2xl max-w-sm w-full mx-4 p-8 flex flex-col items-center text-center">
+    <i class="ri-mail-send-line text-4xl text-primary mb-4"></i>
+    <h3 class="text-2xl font-semibold text-white mb-2">Email sent</h3>
+    <p class="text-white/80 mb-6">Your message was sent successfully!</p>
+    <button id="closeEmailSentModal" class="btn-primary px-6 py-2 rounded-xl text-white">OK</button>
+  </div>
+</div>
+<script>
+document.getElementById('contactForm').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const form = e.target;
+  const data = {
+    name: form.name.value,
+    email: form.email.value,
+    subject: form.subject.value,
+    message: form.message.value
+  };
+  try {
+    const response = await fetch('http://localhost:3000/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    });
+    if (response.ok) {
+      document.getElementById('emailSentModal').classList.add('flex');
+      document.getElementById('emailSentModal').classList.remove('hidden');
+      form.reset();
+    } else {
+      alert('Failed to send message.');
+    }
+  } catch (err) {
+    alert('Failed to send message.');
+  }
+});
+document.getElementById('closeEmailSentModal').addEventListener('click', function() {
+  document.getElementById('emailSentModal').classList.remove('flex');
+  document.getElementById('emailSentModal').classList.add('hidden');
+});
+</script>
+<script src="sleek-portfolio/Sleek-Portfolio.js"></script>
+</body>
+</html>
