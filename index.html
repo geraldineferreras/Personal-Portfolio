@@ -549,32 +549,23 @@ Send Message
     <button id="closeEmailSentModal" class="btn-primary px-6 py-2 rounded-xl text-white">OK</button>
   </div>
 </div>
+<!-- Add EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script>
-document.getElementById('contactForm').addEventListener('submit', async function(e) {
+(function() {
+  emailjs.init('buNo9HcPPzRRCH0t9');
+})();
+
+document.getElementById('contactForm').addEventListener('submit', function(e) {
   e.preventDefault();
-  const form = e.target;
-  const data = {
-    name: form.name.value,
-    email: form.email.value,
-    subject: form.subject.value,
-    message: form.message.value
-  };
-  try {
-    const response = await fetch('http://localhost:3000/contact', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(data)
-    });
-    if (response.ok) {
+  emailjs.sendForm('service_oiroisq', 'template_itgewpj', this)
+    .then(function() {
       document.getElementById('emailSentModal').classList.add('flex');
       document.getElementById('emailSentModal').classList.remove('hidden');
-      form.reset();
-    } else {
-      alert('Failed to send message.');
-    }
-  } catch (err) {
-    alert('Failed to send message.');
-  }
+      e.target.reset();
+    }, function(error) {
+      alert('Failed to send message: ' + JSON.stringify(error));
+    });
 });
 document.getElementById('closeEmailSentModal').addEventListener('click', function() {
   document.getElementById('emailSentModal').classList.remove('flex');
